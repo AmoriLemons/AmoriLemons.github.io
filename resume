@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amori Lemons | Portfolio</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #fff;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin-top: 5px;
+        }
+
+        nav {
+            background: #ff6f61;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #ff6f61;
+            border-bottom: 2px solid #ff7e5f;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #ff7e5f;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            color: #ff6f61;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin-bottom: 10px;
+        }
+
+        .card ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .card ul li {
+            margin-bottom: 8px;
+        }
+
+        .card code {
+            display: block;
+            background: #333;
+            color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .volunteer-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .volunteer-list ul li {
+            background: #ff7e5f;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Amori Lemons</h1>
+        <p>Ballwin, MO • Alemons864@hornets.hssu.edu • 314-201-8932</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section id="education">
+            <h2>Education</h2>
+            <div class="card">
+                <h3>Harris-Stowe State University</h3>
+                <p>B.S. in Computer Science [Expected Graduation Date: May 2026]</p>
+                <ul>
+                    <li>Board of Regents Scholar</li>
+                    <li>Technology Ambassador</li>
+                    <li>Information Technology Tutor</li>
+                    <li>Founder of the Tech Hive</li>
+                    <li>Provost Honors Student</li>
+                    <li>Dean’s List 2023-2024</li>
+                    <li>100+ Hours of Community Service</li>
+                    <li>4.0/4.0 GPA</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>St. Louis Community College</h3>
+                <ul>
+                    <li>A+ Program Scholar</li>
+                    <li>Make It Count Scholar</li>
+                    <li>4.0/4.0 GPA</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Marquette High School</h3>
+                <ul>
+                    <li>100+ Tutoring Hours</li>
+                    <li>70 hours of Community Service</li>
+                    <li>President and Founder of Black Creations</li>
+                    <li>President of the Debate Club</li>
+                </ul>
+            </div>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="card">
+                <h3>Information Technology Intern, CSI Leasing</h3>
+                <p>June 2024 - Current</p>
+                <ul>
+                    <li>Assisted with troubleshooting hardware and software issues.</li>
+                    <li>Supported installation, configuration, and maintenance of computer systems and networks.</li>
+                    <li>Performed system updates and patches for security and performance.</li>
+                    <li>Assisted with user accounts, email systems, and IT services.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>IT Support Specialist, Harris-Stowe State University</h3>
+                <p>January 2024 - May 2024</p>
+                <ul>
+                    <li>Provided technical support to students and faculty.</li>
+                    <li>Resolved hardware and software issues efficiently.</li>
+                    <li>Maintained and configured computer labs.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Front Desk Agent, Luxury Cosmetics and Spa</h3>
+                <p>June 2021 - December 2023</p>
+                <ul>
+                    <li>Resolved technical issues related to computer systems.</li>
+                    <li>Adhered to safety and security protocols.</li>
+                    <li>Organized and maintained an efficient filing system.</li>
+                    <li>Created reports and presentations using MS Office Suite.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Project Manager, AMPED</h3>
+                <p>January 2020 - May 2020</p>
+                <ul>
+                    <li>Ensured timely and quality task completion.</li>
+                    <li>Resolved conflicts and mentored project team members.</li>
+                    <li>Developed a budget tracking system for cost savings.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="card">
+                <h3>Google IT Support Certification</h3>
+                <ul>
+                    <li>Day-to-day IT support tasks including computer assembly, wireless networking, and customer service.</li>
+                    <li>End-to-end customer support from problem identification to troubleshooting and debugging.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Google Automation with Python Certification</h3>
+                <ul>
+                    <li>Automated tasks using Python scripts.</li>
+                    <li>Used Git and GitHub for version control.</li>
+                    <li>Managed IT resources at scale, including physical and virtual machines.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Full Stack Web Developer</h3>
+                <ul>
+                    <li>Built 16 web development projects for portfolio.</li>
+                    <li>Applied technologies including JavaScript, React, Node, and Web3 development.</li>
+                    <li>Developed websites and web apps for startups and businesses.</li>
+                </ul>
+            </div>
+        </section>
+        <section id
