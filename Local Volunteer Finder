@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Volunteer Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background: #4caf50;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .search-bar {
+            margin-bottom: 20px;
+        }
+
+        .search-bar input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .volunteer-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .volunteer-list li {
+            background: #e0f7fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 15px;
+        }
+
+        footer {
+            background: #4caf50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Local Volunteer Finder</h1>
+    </header>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for volunteer opportunities...">
+        </div>
+        <ul id="volunteer-list" class="volunteer-list">
+            <!-- Volunteer items will be populated here -->
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2024 Local Volunteer Finder. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const volunteerOpportunities = [
+            { title: "Beach Cleanup", description: "Help clean up the local beach every Saturday morning.", location: "Beachside Park", date: "Every Saturday" },
+            { title: "Food Bank Assistance", description: "Assist in sorting and distributing food at the local food bank.", location: "Downtown Food Bank", date: "Monday - Friday" },
+            { title: "Animal Shelter Support", description: "Volunteers needed to help care for animals at the shelter.", location: "Greenfield Animal Shelter", date: "Weekdays" },
+            { title: "Community Gardening", description: "Join us in maintaining the community garden.", location: "Riverdale Community Garden", date: "Weekends" },
+            { title: "Tutoring for Kids", description: "Provide tutoring support for children in various subjects.", location: "Local Library", date: "After School" }
+        ];
+
+        const searchInput = document.getElementById('search');
+        const volunteerList = document.getElementById('volunteer-list');
+
+        function displayOpportunities(opportunities) {
+            volunteerList.innerHTML = opportunities.map(opportunity => `
+                <li>
+                    <h2>${opportunity.title}</h2>
+                    <p><strong>Description:</strong> ${opportunity.description}</p>
+                    <p><strong>Location:</strong> ${opportunity.location}</p>
+                    <p><strong>Date:</strong> ${opportunity.date}</p>
+                </li>
+            `).join('');
+        }
+
+        function filterOpportunities() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const filteredOpportunities = volunteerOpportunities.filter(opportunity =>
+                opportunity.title.toLowerCase().includes(searchTerm) ||
+                opportunity.description.toLowerCase().includes(searchTerm)
+            );
+            displayOpportunities(filteredOpportunities);
+        }
+
+        searchInput.addEventListener('input', filterOpportunities);
+
+        // Initial display
+        displayOpportunities(volunteerOpportunities);
+    </script>
+</body>
+</html>
